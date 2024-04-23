@@ -124,8 +124,6 @@ public:
 	};
 
 	static EditorSettings *get_singleton();
-	static String get_existing_settings_path();
-	static String get_newest_settings_path();
 
 	static void create();
 	void setup_language();

@@ -1922,7 +1922,7 @@ void RasterizerCanvasGLES3::render_sdf(RID p_render_target, LightOccluderInstanc
 	while (instance) {
 		OccluderPolygon *oc = occluder_polygon_owner.get_or_null(instance->occluder);
 
-		if (!oc || oc->sdf_vertex_array == 0 || !instance->sdf_collision) {
+		if (!oc || oc->sdf_vertex_array == 0) {
 			instance = instance->next;
 			continue;
 		}

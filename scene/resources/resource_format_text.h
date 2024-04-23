@@ -54,7 +54,6 @@ class ResourceLoaderText {
 	};
 
 	bool is_scene = false;
-	int format_version;
 	String res_type;
 
 	bool ignore_resource_parsing = false;
@@ -179,7 +178,6 @@ class ResourceFormatSaverTextInstance {
 	List<Ref<Resource>> saved_resources;
 	HashMap<Ref<Resource>, String> external_resources;
 	HashMap<Ref<Resource>, String> internal_resources;
-	bool use_compat = true;
 
 	struct ResourceSort {
 		Ref<Resource> resource;
